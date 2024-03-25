@@ -61,10 +61,10 @@
 										</ul>
 									{{/if}}
 
-									{{#if website}}
+									{{#if url}}
 										<ul>
 											<li>Website</li>
-											<li><a href="{{website}}" rel="noopener">{{website}}</a></li>
+											<li><a href="{{url}}" rel="noopener">{{url}}</a></li>
 										</ul>
 									{{/if}}
 								</div>
