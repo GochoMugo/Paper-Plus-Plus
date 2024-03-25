@@ -241,6 +241,11 @@ body > div > article > div > section:last-child {
   margin-bottom: 0.45em;
 }
 
+.work-listing .work-summary {
+  margin-bottom: 20px;
+  margin-top: 10px !important;
+}
+
 div.content-text.work-listing.education-listing > p:nth-child(2) {
   margin-top:0.25em;
 }

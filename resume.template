@@ -245,7 +245,7 @@
 										{{/if}}
 
 										{{#if summary}}
-											<p>{{summary}}</p>
+											<p class="work-summary">{{summary}}</p>
 										{{/if}}
 
 										{{#if highlights.length}}
