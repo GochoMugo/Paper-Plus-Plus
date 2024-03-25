@@ -332,6 +332,13 @@
 											</p>
 										{{/if}}
 
+										{{#if courses}}
+											<p class="highlight">
+											Courses:
+											<i>{{#commalist courses}}{{.}}{{/commalist}}</i>
+											</p>
+										{{/if}}
+
 									</div>
 								</div>
 							</section>
