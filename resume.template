@@ -208,18 +208,18 @@
 					{{/resume.basics}}
 
 					{{#if resume.work.length}}
-						{{#each resume.work}}
-						{{#if @first}}
-								<section class="content">
-						{{else}}
-								<section class="content work-content">
-						{{/if}}
+						<section class="content content-fix">
 							<div class="row small-fullwidth-row">
 								<div class="content-cat big-text">
-									{{#if @first}}
-											<h3>Work	Experience</h3>
-									{{/if}}
-
+									<h3>Work Experience</h3>
+								</div>
+								<div class="content-text work-listing education-listing"></div>
+							</div>
+						</section>
+						{{#each resume.work}}
+						<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
 									{{#if startDate}}
 										{{#if endDate}}
 											<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">{{endDate}}</span></p>
@@ -227,12 +227,11 @@
 											<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">Present</span></p>
 										{{/if}}
 									{{/if}}
-
 								</div>
 								<div class="content-text work-listing education-listing">
 										{{#if (and company position)}}
 										{{#if @first}}
-											<p class="small-center first-listing">
+											<p class="small-center">
 											{{else}}
 											<p class="small-center">
 										{{/if}}
@@ -260,7 +259,7 @@
 												<section class="assignment">
 													{{#if (and company position)}}
 													{{#if @first}}
-														<p class="small-center first-listing">
+														<p class="small-center">
 														{{else}}
 														<p class="small-center">
 													{{/if}}
@@ -292,19 +291,18 @@
 
 
 					{{#if resume.education.length}}
+						<section class="content content-fix">
+							<div class="row">
+								<div class="content-cat big-text">
+									<h3>Education</h3>
+								</div>
+								<div class="content-text work-listing education-listing"></div>
+							</div>
+						</section>
 						{{#each resume.education}}
-							{{#if @first}}
-								<section class="content">
-							{{else}}
-								<section class="content education-content">
-							{{/if}}
+							<section class="content education-content">
 								<div class="row">
 									<div class="content-cat big-text">
-
-										{{#if @first}}
-											<h3>Education</h3>
-										{{/if}}
-
 										{{#if startDate}}
 											{{#if endDate}}
 												<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">{{endDate}}</span></p>
@@ -312,12 +310,11 @@
 												<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">Present</span></p>
 											{{/if}}
 										{{/if}}
-
 									</div>
 									<div class="content-text work-listing education-listing">
 										{{#if institution}}
 											{{#if @first}}
-												<p class="heading first-listing">{{institution}}</p>
+												<p class="heading">{{institution}}</p>
 												{{else}}
 												<p class="heading">{{institution}}</p>
 											{{/if}}
@@ -404,7 +401,7 @@
 								<div class="content-text work-listing education-listing">
 										{{#if (and name role)}}
 											{{#if @first}}
-												<p class="first-listing small-center">
+												<p class="small-center">
 												{{else}}
 												<p class="small-center">
 											{{/if}}
@@ -457,7 +454,7 @@
 								<div class="content-text work-listing education-listing">
 										{{#if (and organization position)}}
 										{{#if @first}}
-											<p class="first-listing small-center">
+											<p class="small-center">
 											{{else}}
 											<p class="small-center">
 										{{/if}}
