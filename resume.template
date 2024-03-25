@@ -235,10 +235,18 @@
 											{{else}}
 											<p class="small-center">
 										{{/if}}
-												{{#if website}}
-													<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl" rel="noopener">{{company}}</a></strong>
+												{{# if _as }}
+													{{#if website}}
+														<strong>{{company}}</strong> as a <strong><a href="{{website}}" class="no-nl" rel="noopener">{{position}}</a></strong>
+													{{else}}
+														<strong>{{company}}</strong> as a <strong>{{position}}</strong>
+													{{/if}}
 												{{else}}
-													<strong>{{position}}</strong> at <strong>{{company}}</strong>
+													{{#if website}}
+														<strong>{{position}}</strong> at <strong><a href="{{website}}" class="no-nl" rel="noopener">{{company}}</a></strong>
+													{{else}}
+														<strong>{{position}}</strong> at <strong>{{company}}</strong>
+													{{/if}}
 												{{/if}}
 											</p>
 										{{/if}}
