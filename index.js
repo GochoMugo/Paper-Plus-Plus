@@ -20,7 +20,7 @@ function render(resume) {
 
 	// Get a font awsome class from a name
 	Handlebars.registerHelper('fontAwesome', function(str) {
-		return "fa-" + str.toLowerCase() + "-square";
+		return "fa-" + str.toLowerCase();
 	});
 
 	// http://stackoverflow.com/a/31632215/838789
