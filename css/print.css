@@ -143,3 +143,8 @@ div.content-text.skills-listing > ul > li:first-child {
 .big-text {
   padding-top: 0;
 }
+
+.page-break	{
+  display: block;
+  page-break-before: always;
+}

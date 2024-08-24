@@ -299,6 +299,7 @@
 
 
 					{{#if resume.education.length}}
+						<div class="page-break"></div>
 						<section class="content content-fix">
 							<div class="row">
 								<div class="content-cat big-text">
@@ -547,6 +548,33 @@
 									{{/each}}
 								</div>
 							</div>
+						</section>
+					{{/if}}
+
+					{{#if resume.projects.length}}
+						<section class="projects">
+							<h3>Recent projects</h3>
+							{{#each resume.projects}}
+								<div class="projects-listing">
+									<div>
+										<div class="projects-listing-info">
+											<img src="{{logo}}" alt="{{name}}" />
+											{{#if endDate}}
+												<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">{{endDate}}</span></p>
+											{{else}}
+												<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">Present</span></p>
+											{{/if}}
+										</div>
+										<h4>{{name}}</h4>
+										<p class="projects-listing-description">{{description}}</p>
+									</div>
+									<ul>
+										{{#each milestones}}
+											<li>{{.}}</li>
+										{{/each}}
+									</ul>
+								</div>
+							{{/each}}
 						</section>
 					{{/if}}
 				</div>

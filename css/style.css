@@ -338,3 +338,35 @@ a{
 .content-fix {
   margin-bottom: -0.75em;
 }
+
+
+.projects {
+  margin-top: 40px;
+}
+
+.projects-listing {
+  margin-top: 40px;
+}
+
+.projects-listing-info {
+  float: right;
+  font-size: 9pt;
+  font-weight: bold;
+  text-align: center;
+}
+
+.projects-listing-info img {
+  width: 180px;
+}
+
+.projects-listing h4 {
+  font-family: "Merriweather";
+}
+
+.projects-listing-description {
+  font-size: 11pt;
+}
+
+.projects-listing ul {
+  font-size: 10pt;
+}
