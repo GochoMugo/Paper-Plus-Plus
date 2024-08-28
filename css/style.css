@@ -349,10 +349,17 @@ a{
 }
 
 .projects-listing-info {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
   float: right;
   font-size: 9pt;
   font-weight: bold;
-  text-align: center;
+}
+
+.projects-listing-info a {
+  font-size: 8pt;
+  margin-top: 18px;
 }
 
 .projects-listing-info img {

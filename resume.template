@@ -559,6 +559,7 @@
 									<div>
 										<div class="projects-listing-info">
 											<img src="{{logo}}" alt="{{name}}" />
+											<a href="{{website}}">{{website}}</a>
 											{{#if endDate}}
 												<p><span class="no-nl">{{startDate}}</span> to <span class="no-nl">{{endDate}}</span></p>
 											{{else}}
