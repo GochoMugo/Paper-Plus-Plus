@@ -59,7 +59,10 @@
 						{{#if url}}
 							<li>
 								<span>Website</span>
-								<span><a href="{{url}}" rel="noopener">{{#no-http}}{{url}}{{/no-http}}</a></span>
+								<span>
+									<a href="{{url}}" rel="noopener">{{#no-http}}{{url}}{{/no-http}}</a>
+									<span>(Portfolio)</span>
+								</span>
 							</li>
 						{{/if}}
 					</ul>
