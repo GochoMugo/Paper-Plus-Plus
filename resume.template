@@ -476,7 +476,7 @@
 								<li>{{.}}</li>
 							{{/each}}
 						</ul>
-						<p class="techstack">Tech stack: {{technologies}}</p>
+						<p class="techstack">Tech Stack: <i>{{#commalist technologies}}{{.}}{{/commalist}}</i></p>
 					</section>
 				{{/each}}
 			{{/if}}
