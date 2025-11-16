@@ -131,11 +131,12 @@ ul.kvlist li span:first-child {
 
 /* PROJECTS. */
 
-.project {
+#recent-projects {
   margin-top: 40px;
 }
 
 .project {
+  margin: 20px 0;
   page-break-inside: avoid;
 }
 
@@ -146,6 +147,7 @@ ul.kvlist li span:first-child {
   float: right;
   font-size: 9pt;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 .project-badge a {

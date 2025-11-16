@@ -447,13 +447,14 @@
 
 			<!-- PROJECTS -->
 			{{#if resume.projects.length}}
-				<section class="content">
+				<section class="content" id="recent-projects">
 					<div>
 						<h3>Recent projects</h3>
 					</div>
 				</section>
 				{{#each resume.projects}}
 					<section class="project">
+						<hr/>
 						<div>
 							<div class="project-badge">
 								<img src="{{logo}}" alt="{{name}}" />
