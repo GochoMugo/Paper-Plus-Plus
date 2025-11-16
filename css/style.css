@@ -56,6 +56,7 @@ a {
 .content {
   display: flex;
   margin-bottom: 20px;
+  page-break-inside: avoid;
 }
 
 .content > div:nth-child(1) {
@@ -132,6 +133,10 @@ ul.kvlist li span:first-child {
 
 .project {
   margin-top: 40px;
+}
+
+.project {
+  page-break-inside: avoid;
 }
 
 .project-badge {
