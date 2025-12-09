@@ -38,7 +38,7 @@
 			{{/if}}
 
 			<!-- CONTACT -->
-			<section class="content">
+			<section class="content" id="contact">
 				<div>
 					<h3>Contact</h3>
 				</div>
@@ -481,5 +481,12 @@
 				{{/each}}
 			{{/if}}
 		</article>
+		<script type="text/javascript">
+			const body = document.getElementsByTagName("body")[0];
+			const url = new URL(window.location.href);
+			if (url.searchParams.get("hide-contact")) {
+				body.className += "hide-contact";
+			}
+		</script>
 	</body>
 </html>

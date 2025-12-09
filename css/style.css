@@ -129,6 +129,11 @@ ul.kvlist li span:first-child {
   font-size: 8pt;
 }
 
+/* CONTACT. */
+body.hide-contact #contact {
+  display: none;
+}
+
 /* PROJECTS. */
 
 #recent-projects {
